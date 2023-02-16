@@ -1,27 +1,30 @@
 <script setup lang="ts">
 import { RouterLink, RouterView } from 'vue-router'
-import HelloWorld from './components/HelloWorld.vue'
+// import HelloWorld from './components/HelloWorld.vue'
 </script>
 
 <template>
-  <header>
-    <img alt="Vue logo" class="logo" src="@/assets/logo.svg" width="125" height="125" />
+  <header class="flex justify-between items-center h-16">
+    <div class="flex items-center gap-5 text-emerald-500 text-xl">
+      <img alt="Vue logo" class="logo" src="@/assets/logo.svg" width="30" height="30" />
+      <p>Vue3 Playground</p>
+    </div>
 
     <div class="wrapper">
-      <HelloWorld msg="You did it!" />
-
-      <nav>
+      <nav class="flex items-center gap-3">
         <RouterLink :to="{ name: 'home' }">Home</RouterLink>
-        <RouterLink :to="{ name: 'about' }">About</RouterLink>
+        <!-- <RouterLink :to="{ name: 'about' }">About</RouterLink> -->
       </nav>
     </div>
   </header>
-
-  <RouterView />
+  
+  <section class="pt-5 pb-8 min-h-[calc(100vh-64px)]">
+    <RouterView />
+  </section>
 </template>
 
 <style scoped>
-header {
+/* header {
   line-height: 1.5;
   max-height: 100vh;
 }
@@ -81,5 +84,5 @@ nav a:first-of-type {
     padding: 1rem 0;
     margin-top: 1rem;
   }
-}
+} */
 </style>
