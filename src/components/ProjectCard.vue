@@ -1,12 +1,16 @@
 <template>
-  <div class="card p-3 min-h-[150px] rounded-lg border border-emerald-500 cursor-pointer flex justify-center items-center">
-    <p class="text-xl">{{title}}</p>
-  </div>
+  <RouterLink :to="{ name: name || '' }">
+    <div class="card p-3 min-h-[150px] rounded-lg border border-emerald-500 cursor-pointer flex justify-center items-center">
+      <p class="text-xl">{{title}}</p>
+    </div>
+  </RouterLink>
 </template>
 
 <script setup lang="ts">
+  import { RouterLink } from 'vue-router'
   defineProps<{
     title: string,
+    name: string,
     image: any,
   }>()
 </script>

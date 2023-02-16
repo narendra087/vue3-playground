@@ -18,6 +18,11 @@ const router = createRouter({
       // which is lazy-loaded when the route is visited.
       component: () => import('../views/AboutView.vue')
     },
+    {
+      path: '/project/calculator',
+      name: 'calculator',
+      component: () => import('../views/projects/CalculatorView.vue')
+    },
     
     // !!! Route error handling
     {
