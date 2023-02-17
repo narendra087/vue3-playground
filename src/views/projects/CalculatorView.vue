@@ -6,7 +6,7 @@
     </section>
     
     <section id="calc-body" class="max-w-[320px] mt-5 mx-auto rounded-lg bg-[#FEFBE9] p-4">
-      <div class="calc-input border rounded-md border-gray-500 min-h-[46px] text-gray-800 text-xl flex flex-col items-end justify-end p-2 cursor-default">
+      <div class="calc-input rounded-md min-h-[46px] text-gray-800 text-xl flex flex-col items-end justify-end p-2 cursor-default">
         <p :class="[ calculationResult ? 'text-sm transition-all' : '', 'text-right break-all' ]">{{ stringNumber }}</p>
         <p :class="[ !calculationResult ? 'text-sm' : '', 'text-2xl font-bold transition-all text-right break-all']">{{ calculationResult }}</p>
       </div>
@@ -86,14 +86,26 @@
 </script>
 
 <style>
+  .calc-input {
+    box-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.25);
+  }
+  
   .btn-calc {
-    @apply text-gray-900 text-lg flex items-center justify-center border border-gray-900 p-2 cursor-pointer rounded-md;
+    @apply text-gray-900 text-lg flex items-center justify-center p-2 cursor-pointer rounded-md transition-all;
+    box-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.25);
   }
   
   .btn-number {
-    background-color: #E1EEDD;
+    background-color: rgba(225, 238, 221, 0.5);
   }
+  .btn-number:hover {
+    background-color: rgba(225, 238, 221, 1);
+  }
+  
   .btn-operator {
-    background-color: #F0A04B;
+    background-color: rgba(240, 160, 75, 0.5);
+  }
+  .btn-operator:hover {
+    background-color: rgba(240, 160, 75, 1);
   }
 </style>
