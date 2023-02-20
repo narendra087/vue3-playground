@@ -4,6 +4,12 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer base {
+  html {
+    font-family: Montserrat, 'Open-sans';
+  }
+}
+
 #app {
   max-width: 1280px;
   margin: 0 auto;

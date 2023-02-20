@@ -9,7 +9,7 @@
       <p class="text-lg mb-5">Project List:</p>
       <div class="grid lg:grid-cols-4 md:grid-cols-3 sm:grid-cols-2 gap-5">
         <ProjectCard title="Calculator" name="calculator" image="" />
-        <ProjectCard title="To-do-list" name="" image="" />
+        <!-- <ProjectCard title="To-do-list" name="" image="" /> -->
         <ProjectCard title="Weather" name="weather" image="" />
       </div>
     </section>
