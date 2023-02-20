@@ -1,6 +1,6 @@
 <template>
   <RouterLink :to="{ name: name || '' }">
-    <div class="card p-3 min-h-[150px] rounded-lg border border-emerald-500 cursor-pointer flex justify-center items-center">
+    <div class="project-card p-3 min-h-[150px] rounded-lg border border-emerald-500 cursor-pointer flex justify-center items-center">
       <p class="text-xl">{{title}}</p>
     </div>
   </RouterLink>
@@ -16,10 +16,10 @@
 </script>
 
 <style scoped>
-  .card {
+  .project-card {
     transition: all 0.5s;
   }
-  .card:hover {
+  .project-card:hover {
     box-shadow: 0 0 10px 5px rgba(16,185,129,0.39);
   }
 </style>
