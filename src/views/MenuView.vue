@@ -11,7 +11,7 @@
         <ProjectCard :isActive="true" title="Calculator" name="calculator" image="" />
         <!-- <ProjectCard isActive="" title="To-do-list" name="" image="" /> -->
         <ProjectCard :isActive="true" title="Weather" name="weather" image="" />
-        <ProjectCard :isActive="false" title="Forum" name="" image="" />
+        <ProjectCard :isActive="false" title="Forum" name="forum" image="" />
         <ProjectCard :isActive="false" title="Blog" name="" image="" />
       </div>
     </section>

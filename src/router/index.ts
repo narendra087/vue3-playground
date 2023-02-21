@@ -28,6 +28,11 @@ const router = createRouter({
       name: 'weather',
       component: () => import('../views/projects/WeatherView.vue')
     },
+    {
+      path: '/project/forum',
+      name: 'forum',
+      component: () => import('../views/projects/ForumView.vue')
+    },
     
     // !!! Route error handling
     {
