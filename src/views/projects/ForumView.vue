@@ -25,13 +25,14 @@
   </div>
 </template>
 
-<script lang="ts">
+<script lang="ts" setup>
   import { forumCategory } from '../../mock/forumCategory'
-  
+</script>
+
+<script lang="ts">
   export default {
     data():any {
       return {
-        forumCategory,
         activeTab: '',
       }
     },
