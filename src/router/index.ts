@@ -29,10 +29,15 @@ const router = createRouter({
       component: () => import('../views/projects/WeatherView.vue')
     },
     {
-      path: '/project/forum',
-      name: 'forum',
-      component: () => import('../views/projects/ForumView.vue')
+      path: '/project/blog',
+      name: 'blog',
+      component: () => import('../views/projects/BlogView.vue')
     },
+    // {
+    //   path: '/project/forum',
+    //   name: 'forum',
+    //   component: () => import('../views/projects/ForumView.vue')
+    // },
     
     // !!! Route error handling
     {

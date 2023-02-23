@@ -1,4 +1,4 @@
-const forumCategory = [
+const blogCategory:any = [
   {
     name: 'Vue JS',
     slug: 'vue-js',
@@ -14,5 +14,5 @@ const forumCategory = [
 ]
 
 export {
-  forumCategory,
+  blogCategory,
 }
