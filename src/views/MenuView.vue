@@ -8,11 +8,11 @@
     <section id="content" class="pt-5">
       <p class="text-lg mb-5">Project List:</p>
       <div class="grid lg:grid-cols-4 md:grid-cols-3 sm:grid-cols-2 gap-5">
-        <ProjectCard :isActive="true" title="Calculator" name="calculator" image="" />
-        <!-- <ProjectCard isActive="" title="To-do-list" name="" image="" /> -->
-        <ProjectCard :isActive="true" title="Weather" name="weather" image="" />
-        <ProjectCard :isActive="true" title="Blog" name="blog" image="" />
-        <ProjectCard :isActive="false" title="Forum" name="" image="" />
+        <ProjectCard title="Calculator" name="calculator" image="" />
+        <!-- <ProjectCard title="To-do-list" name="" image="" /> -->
+        <ProjectCard title="Weather" name="weather" image="" />
+        <ProjectCard title="Blog" name="blog" image="" />
+        <ProjectCard title="Forum" name="" image="" />
       </div>
     </section>
   </div>

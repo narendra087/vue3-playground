@@ -2,7 +2,7 @@
   <RouterLink :to="{ name: name || '' }">
     <div class="project-card p-3 min-h-[150px] rounded-lg border border-emerald-500 cursor-pointer flex flex-col justify-center items-center">
       <p class="text-xl">{{title}}</p>
-      <span v-if="!isActive" class="text-sm">( coming soon )</span>
+      <span v-if="!name" class="text-sm">( coming soon )</span>
     </div>
   </RouterLink>
 </template>
@@ -12,7 +12,6 @@
   defineProps<{
     title: string,
     name: string,
-    isActive: boolean,
     image: any,
   }>()
 </script>

@@ -21,9 +21,14 @@
         </div>
       </div>
       <div class="blog-content p-5 grid grid-cols-4 gap-4 -mx-4 -mb-4 bg-slate-200 rounded-b-lg">
-        <div class="col-span-3 flex flex-col gap-4">
-          <div class="blog-filter"></div>
-          <div class="blog-list px-4 flex flex-col gap-4">
+        <div class="col-span-3 flex flex-col gap-4 px-4">
+          <div class="blog-filter">
+            <select class="select select-ghost w-full max-w-xs text-slate-700">
+              <option>Latest thread</option>
+              <option>Popular thread</option>
+            </select>
+          </div>
+          <div class="blog-list flex flex-col gap-4">
             <BlogCard
               v-for="blog in blogList"
               :key="blog.title"
@@ -34,7 +39,8 @@
           </div>
         </div>
         <div class="">
-          
+          <button class="btn btn-block">Buat thread</button>
+          <RecommendedBlog />
         </div>
       </div>
     </section>
@@ -46,6 +52,7 @@
   import { blogList } from '../../mock/blogList'
   
   import BlogCard from '@/components/BlogCard.vue';
+  import RecommendedBlog from '@/components/blog/RecommendedBlog.vue';
 </script>
 
 <script lang="ts">
